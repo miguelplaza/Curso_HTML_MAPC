@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Alumno: MAPC-->
+<html> 
+<head>
+    <meta charset="utf-8">
+    <title>Ej3-1: Integración de estilos</title>
+    <!-- Definición del estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo.css" />	
+    <style type="text/css">
+        .estilo_int{
+            background-color:rgb(42, 133, 126);
+            font-size: 20px;    
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+        }
+    </style>
+</head>
+<body>
+    <h1>Integración de estilos</h1>
+
+    <!--Estilo definino en un archivo externo-->
+    <p class="estilo_ext">
+        En este ejercicio estamos viendo cómo podemos integrar los estilos de distintas formas. 
+        Este párrafo tiene los estilos definidos en un archivo externo.
+    </p>
+
+    <!--Estilo definino dentro de la etiqueta-->
+    <p style="background-color: blue; color: white; font-size: 50px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >
+            Mientras que este los tiene definidos como atributos de la etiqueta HTML
+    </p>   
+
+    <!--Estilo definino en la etiqueta head-->
+    <p class="estilo_int">
+        Y este último, dentro de la etiqueta head del HTML.
+    </p>               
+</body>
+</html>

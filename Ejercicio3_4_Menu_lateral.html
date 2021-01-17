@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flex </title>
+<head>
+	<style>
+		body, html {
+			height: 100%;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+		#main {
+			height: 90%;
+			display: -webkit-flex;
+			display: flex;
+			flex-flow: row;
+		}
+		#main nav {
+			background: rgb(151, 151, 153);
+			flex: 1 6 20%;
+			order: 1;		
+			font-size: 20px;
+		}			
+		#main article {
+			background: rgb(238, 247, 238);
+			flex: 3 1 70%;
+			order: 2;
+		}
+		#main aside {
+			background:   rgb(238, 247, 238);
+			flex: 1 6 15%;
+			order: 3;
+		}
+		header, footer {
+			display: block;
+			min-height: 5%;
+			background: rgb(41, 40, 39);
+			color: lightgrey;
+			text-align: left;
+			vertical-align: middle;
+		}
+		ul {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			display:flex;
+			flex-direction: column;
+		}
+		li { flex-grow: 1; }
+		a {
+			display:block;
+			padding:1em;
+			background-color:rgb(129, 123, 123) ;
+			text-align:center;
+			margin-bottom:0.2em;
+			text-decoration:none;
+			color:white;
+		}
+		a:hover {background-color: rgb(51, 66, 51); color: greenyellow; }		
+	</style>
+</head>
+<body>
+	<header style="text-align: center; font-size: 30px;">
+		Menú lateral
+	</header>
+	<div id='main'>
+		<nav>
+			<ul>
+				<li><a href="https://twitter.com" target="_blank">Twiter</a></li>
+				<li><a href="https://www.twitch.tv/" target="_blank">Twich</a></li>
+				<li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+				<li><a href="https://www.google.es/" target="_blank">Google</a></li>
+			</ul>
+		</nav>
+		<article></article>
+		<aside></aside>
+	</div>
+	<footer></footer>
+</body>
+</html>

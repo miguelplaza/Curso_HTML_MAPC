@@ -1,0 +1,98 @@
+<!doctype html>
+<!--Alumno: MAPC-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flex </title>
+<head>
+	<style>
+		body, html {
+			height: 100%;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+		#main {
+		height: 90%;
+		display: -webkit-flex;
+		display: flex;
+		flex-flow: row;
+		}
+		#main nav {
+			background: rgb(151, 151, 153);
+			flex: 1 6 20%;
+			order: 1;		
+		}			
+		#main article {
+			background: rgb(238, 247, 238);
+			flex: 3 1 70%;
+			order: 2;
+		}
+		#main aside {
+			background:  rgb(151, 151, 153);
+			flex: 1 15%;
+			order: 3;
+		}
+		header, footer {
+			display: block;
+			min-height: 5%;
+			background: rgb(41, 40, 39);
+			color: lightgrey;
+			text-align: left;
+			vertical-align: middle;
+		}
+		.boton_personalizado{
+			text-decoration: none;
+			padding: 10px;
+			font-weight: 200;
+			font-size: 15px;
+			color: #ffffff;
+			background-color: #1883ba;
+			border-radius: 6px;
+			border: 2px solid #0016b0;
+		}
+		.boton_personalizado:hover{
+			color:yellow;
+			background-color: #0c4561;
+		}
+	</style>
+</head>
+<body>
+	<header style="text-align: center; font-size: 30px;"">
+		Formulario
+	</header>
+	<div id='main'>
+		<nav></nav>
+		<article>
+			<div id='main'>
+				<form>
+					<table align="center" width="400" border="0" cellpadding="5" cellspacing="0" border="1" bgcolor="#CED9CE">
+						<tr>
+							<td>Nombre:</td>
+							<td><input type="text" name="nombre" maxlength="100"></td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" name="email" maxlength="100"></td>
+						</tr>
+						<tr>
+							<td>Comentarios</td>
+							<td><textarea maxlength="1000"> </textarea></td>						
+						</tr>	
+					</table>
+					</table>
+					<table align="center" width="400" border="0" cellpadding="5" cellspacing="0">
+						<tr>
+							<td align="center">
+								<input class="boton_personalizado" type="submit" value="Enviar">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</article>
+		<aside></aside>
+	</div>
+	<footer></footer>
+</body>
+</html>

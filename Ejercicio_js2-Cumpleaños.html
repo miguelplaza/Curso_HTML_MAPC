@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Ej2: Cumpleaños</title>
+        <script>
+            //Variables
+            const fnacimiento = {
+                    dia: 25,
+                    mes: 'Octubre'
+                    };
+            meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
+                     'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];           
+            
+            //Consultar el mes siguiente al mes de cumpleaños
+            var posicion_mes = meses.indexOf(fnacimiento.mes);
+            var posicion_mes_siguiente = ++posicion_mes;
+            if (posicion_mes_siguiente == 12) 
+                posicion_mes_siguiente = 0;              
+            mes_siguiente = meses[posicion_mes_siguiente];     
+     
+            //Mostrar resultados
+            console.log('Mi cumpleaños es el ' + fnacimiento.dia + ' de ' + fnacimiento.mes);
+            console.log('Mes siguiente al del cumpleaños es: ' + mes_siguiente );
+        </script>
+    </head>
+    <body>
+        <h1>Fecha de cumpleaños</h1>        
+    </body>
+</html>
